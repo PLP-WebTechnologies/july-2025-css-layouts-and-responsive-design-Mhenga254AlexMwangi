@@ -1,0 +1,46 @@
+.flex-container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+background-color: palevioletred;
+max-width: 100%;
+}
+.flex-item{
+    padding: 20px;
+    margin: 80px auto;
+    width: auto;
+    height:50vh;
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: 400px 2fr;
+    grid-template-rows: 100px 1fr 100px ;
+    grid-template-areas: 
+    "header header "
+    "nav main "
+    "footer footer"
+    /* "aside aside"*/
+    ;
+    height: 100vh;
+}
+header{grid-area: header ; background-color: brown;}
+nav{grid-area: nav; background-color: aquamarine;}
+main{grid-area: main; background-color: blue;}
+footer{grid-area: footer;background-color: chocolate;}
+/* aside{grid-area: aside; background-color: black;} */
+@media (max-width: 600px){
+    .grids{
+        height: auto;
+        font-size: small;
+        font-weight: 300;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+}
+    
+
+
+
