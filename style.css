@@ -31,13 +31,21 @@ main{grid-area: main; background-color: blue;}
 footer{grid-area: footer;background-color: chocolate;}
 /* aside{grid-area: aside; background-color: black;} */
 @media (max-width: 600px){
-    .grids{
+    .flex-container{
         height: auto;
+        font-size: xx-large;
+        font-weight: 300;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .grids{
+     height: auto;
         font-size: small;
         font-weight: 300;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     }
+    
 
 }
     
